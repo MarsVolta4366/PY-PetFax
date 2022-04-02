@@ -14,9 +14,9 @@
         <h2 class="petFactText">If you have some fun animal facts, please submit them here and we'll use them!</h2>
     </div>
     <div id="submitFactDiv">
-        <form action="#">
-            <label for="name">Full Name</label>
-            <input type="text" placeholder="Enter your full name" />
+        <form action="/facts/" method="POST">
+            <label for="submitter">Full Name</label>
+            <input type="text" placeholder="Enter your full name" id="submitter" name="submitter" />
             <label for="fact">Fact</label>
             <textarea name="fact" id="fact" cols="30" rows="10" placeholder="Enter your fun facts here"></textarea>
             <button type="submit">Submit</button>
